@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Duarte Advocacia IA Jurídica — Entenda seu caso jurídico em minutos com apoio de inteligência artificial. Atendimento informativo, sem substituir o advogado." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Duarte Advocacia — IA Jurídica" />
+  <meta property="og:description"
+    content="Entenda seu caso jurídico em minutos. IA que organiza sua situação e encaminha ao advogado responsável." />
+  <meta property="og:image" content="/assets/og-image.svg" />
+  <meta name="theme-color" content="#7C3AED" />
+  <title>Duarte Advocacia — IA Jurídica</title>
+
+  <!-- Favicon SVG roxo -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+  <!-- Google Fonts: Fraunces + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&display=swap" />
+
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <!-- Skip link para acessibilidade -->
+  <a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- ===== CABEÇALHO FIXO ===== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Duarte Advocacia — IA Jurídica, ir para início">
+        <!-- Balança SVG roxa -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+          <line x1="16" y1="4" x2="16" y2="28" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" />
+          <line x1="4" y1="8" x2="28" y2="8" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" />
+          <circle cx="16" cy="4" r="2" fill="#8B5CF6" />
+          <path d="M4 8 L2 16 Q4 20 7 16 L9 8" stroke="#8B5CF6" stroke-width="1.5" fill="none"
+            stroke-linejoin="round" />
+          <path d="M28 8 L26 16 Q28 20 31 16 L33 8" stroke="#8B5CF6" stroke-width="1.5" fill="none"
+            stroke-linejoin="round" />
+          <line x1="10" y1="27" x2="22" y2="27" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <span class="logo-name">Duarte <span class="logo-highlight">Advocacia</span></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+        <ul role="list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#areas">Áreas</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#prazos">Prazos</a></li>
+          <li><a href="#perguntas">Perguntas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn btn-primary btn-sm header-cta" id="header-open-chat" aria-label="Falar com a IA jurídica">
+        Falar com a IA
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-text animate-fade-in">
+          <p class="hero-eyebrow">Apoio jurídico inteligente</p>
+          <h1 id="hero-title" class="hero-title">Entenda seu caso jurídico<br /><em>em minutos</em></h1>
+          <p class="hero-subtitle">Nossa IA organiza sua situação, identifica seus direitos e encaminha ao advogado
+            responsável — de forma clara, sigilosa e gratuita.</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary btn-lg" id="hero-open-chat">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Iniciar atendimento
+            </button>
+            <a href="#" id="hero-whatsapp" class="btn btn-outline btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                  fill="currentColor" />
+                <path
+                  d="M11.994 2C6.479 2 2 6.479 2 12c0 1.785.467 3.558 1.355 5.11L2 22l5.012-1.316A9.959 9.959 0 0 0 11.994 22C17.511 22 22 17.521 22 12c0-5.521-4.489-10-10.006-10z"
+                  stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round" />
+              </svg>
+              Falar com advogado
+            </a>
+          </div>
+          <p class="hero-disclaimer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Sigiloso, informativo e gratuito. Não substitui o advogado.
+          </p>
+        </div>
+        <!-- Prévia animada de conversa -->
+        <div class="hero-chat-preview" aria-hidden="true">
+          <div class="preview-window">
+            <div class="preview-header">
+              <div class="preview-dot"></div>
+              <div class="preview-dot"></div>
+              <div class="preview-dot"></div>
+              <span>IA Jurídica — Duarte Advocacia</span>
+            </div>
+            <div class="preview-body" id="preview-chat">
+              <div class="preview-msg assistant">Olá! Sou o assistente jurídico do Duarte Advocacia. Como posso ajudar
+                você hoje?</div>
+              <div class="preview-msg user" style="opacity:0">Fui demitido sem justa causa e não recebi o FGTS.</div>
+              <div class="preview-msg assistant typing-preview" style="opacity:0">Entendo. Você tem direito às verbas
+                rescisórias completas, incluindo <strong>FGTS com multa de 40%</strong>...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ÁREAS DE ATUAÇÃO ===== -->
+    <section id="areas" class="section areas-section" aria-labelledby="areas-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="areas-title" class="section-title">Áreas de atuação</h2>
+          <p class="section-subtitle">Clique na área do seu caso para iniciar o atendimento já direcionado ao
+            especialista.</p>
+        </div>
+        <div class="areas-grid" role="list">
+          <button class="area-card" role="listitem" data-area="consumidor"
+            aria-label="Direito do Consumidor — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">🛒</span>
+            <span class="area-name">Consumidor</span>
+            <span class="area-desc">Produto com defeito, cobranças indevidas, cancelamentos</span>
+          </button>
+          <button class="area-card" role="listitem" data-area="trabalhista"
+            aria-label="Direito Trabalhista — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">👷</span>
+            <span class="area-name">Trabalhista</span>
+            <span class="area-desc">Demissão, horas extras, assédio, FGTS, verbas rescisórias</span>
+          </button>
+          <button class="area-card" role="listitem" data-area="familia"
+            aria-label="Direito de Família e Sucessões — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">👨‍👩‍👧</span>
+            <span class="area-name">Família e Sucessões</span>
+            <span class="area-desc">Divórcio, guarda, pensão, inventário, herança</span>
+          </button>
+          <button class="area-card" role="listitem" data-area="civel"
+            aria-label="Direito Cível e Contratos — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">📋</span>
+            <span class="area-name">Cível e Contratos</span>
+            <span class="area-desc">Dívidas, indenizações, contratos, danos morais e materiais</span>
+          </button>
+          <button class="area-card" role="listitem" data-area="previdenciario"
+            aria-label="Direito Previdenciário INSS — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">🏥</span>
+            <span class="area-name">Previdenciário (INSS)</span>
+            <span class="area-desc">Aposentadoria, auxílio-doença, BPC/LOAS, pensão por morte</span>
+          </button>
+          <button class="area-card" role="listitem" data-area="penal" aria-label="Direito Penal — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">⚖️</span>
+            <span class="area-name">Penal</span>
+            <span class="area-desc">Prisão, flagrante, crime, habeas corpus, defesa criminal</span>
+          </button>
+          <button class="area-card" role="listitem" data-area="tributario"
+            aria-label="Direito Tributário — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">📊</span>
+            <span class="area-name">Tributário</span>
+            <span class="area-desc">Impostos, autuação fiscal, dívida ativa, IRPF, IPTU</span>
+          </button>
+          <button class="area-card" role="listitem" data-area="imobiliario"
+            aria-label="Direito Imobiliário — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">🏠</span>
+            <span class="area-name">Imobiliário</span>
+            <span class="area-desc">Aluguel, despejo, compra e venda, usucapião, condomínio</span>
+          </button>
+          <button class="area-card" role="listitem" data-area="empresarial"
+            aria-label="Direito Empresarial — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">🏢</span>
+            <span class="area-name">Empresarial</span>
+            <span class="area-desc">Sócios, contratos, recuperação judicial, abertura de empresa</span>
+          </button>
+          <button class="area-card" role="listitem" data-area="digital"
+            aria-label="Direito Digital e LGPD — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">💻</span>
+            <span class="area-name">Digital e LGPD</span>
+            <span class="area-desc">Golpes online, dados vazados, calúnia, privacidade digital</span>
+          </button>
+          <button class="area-card" role="listitem" data-area="saude"
+            aria-label="Direito à Saúde e Planos — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">❤️</span>
+            <span class="area-name">Saúde e Planos</span>
+            <span class="area-desc">Negativa de cobertura, cancelamento de plano, erro médico</span>
+          </button>
+          <button class="area-card" role="listitem" data-area="bancario"
+            aria-label="Direito Bancário — iniciar atendimento">
+            <span class="area-icon" aria-hidden="true">🏦</span>
+            <span class="area-name">Bancário</span>
+            <span class="area-desc">Fraude bancária, juros abusivos, negativação, superendividamento</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMO FUNCIONA ===== -->
+    <section id="como-funciona" class="section how-section" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="how-title" class="section-title">Como funciona</h2>
+          <p class="section-subtitle">Quatro etapas simples, do seu relato à orientação do advogado.</p>
+        </div>
+        <ol class="steps-list" aria-label="Etapas do atendimento">
+          <li class="step-item">
+            <div class="step-number" aria-hidden="true">1</div>
+            <div class="step-content">
+              <h3 class="step-title">Você conta o seu caso</h3>
+              <p>Descreva o que aconteceu com suas próprias palavras, sem precisar usar termos jurídicos. A IA entende
+                linguagem simples.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-number" aria-hidden="true">2</div>
+            <div class="step-content">
+              <h3 class="step-title">A IA organiza fatos e documentos</h3>
+              <p>O assistente identifica os pontos jurídicos relevantes, mapeia os documentos que você precisa reunir e
+                explica seus direitos de forma clara.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-number" aria-hidden="true">3</div>
+            <div class="step-content">
+              <h3 class="step-title">O advogado revisa</h3>
+              <p>Um advogado do Duarte Advocacia analisa o resumo do seu caso e confirma a orientação mais adequada à
+                sua situação específica.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-number" aria-hidden="true">4</div>
+            <div class="step-content">
+              <h3 class="step-title">Você recebe a orientação</h3>
+              <p>Com o parecer do advogado, você sabe exatamente quais são seus direitos, o que fazer e quais prazos
+                respeitar.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CHECKLIST DE DOCUMENTOS ===== -->
+    <section id="documentos" class="section docs-section" aria-labelledby="docs-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="docs-title" class="section-title">Documentos por área</h2>
+          <p class="section-subtitle">Saiba quais documentos reunir antes da consulta para agilizar seu atendimento.</p>
+        </div>
+        <div class="accordion" id="docs-accordion">
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-consumidor">
+              <span>🛒 Consumidor</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="docs-consumidor" class="accordion-panel" hidden>
+              <ul>
+                <li>Nota fiscal ou comprovante de compra</li>
+                <li>Fotos ou vídeos do defeito/problema</li>
+                <li>Protocolos de atendimento (número e data)</li>
+                <li>Contrato ou termos de serviço</li>
+                <li>Capturas de tela de publicidade ou conversas no app</li>
+                <li>Extrato bancário com cobranças indevidas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-trabalhista">
+              <span>👷 Trabalhista</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="docs-trabalhista" class="accordion-panel" hidden>
+              <ul>
+                <li>Carteira de Trabalho (CTPS) física ou digital</li>
+                <li>Contracheques e holerites dos últimos meses</li>
+                <li>Extrato do FGTS (app Caixa Tem ou agência)</li>
+                <li>Termo de Rescisão do Contrato (TRCT)</li>
+                <li>Comunicação de Acidente de Trabalho (CAT), se cabível</li>
+                <li>Mensagens, e-mails e conversas de trabalho</li>
+                <li>Contrato de trabalho (se houver)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-familia">
+              <span>👨‍👩‍👧 Família e Sucessões</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="docs-familia" class="accordion-panel" hidden>
+              <ul>
+                <li>Certidão de casamento</li>
+                <li>Certidão de nascimento dos filhos</li>
+                <li>Documentos dos bens (imóveis, veículos, extratos bancários)</li>
+                <li>Certidão de óbito (inventário)</li>
+                <li>Boletim de ocorrência e medida protetiva (violência doméstica)</li>
+                <li>Comprovante de renda de ambas as partes (alimentos)</li>
+                <li>Pacto antenupcial (se houver)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-inss">
+              <span>🏥 Previdenciário (INSS)</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="docs-inss" class="accordion-panel" hidden>
+              <ul>
+                <li>Carta de indeferimento do INSS (com número do benefício)</li>
+                <li>Extrato CNIS (Cadastro Nacional de Informações Sociais — pelo Meu INSS)</li>
+                <li>Laudos médicos e exames (auxílio-doença)</li>
+                <li>Comprovantes de residência e renda familiar (BPC/LOAS)</li>
+                <li>Certidão de óbito e comprovantes de dependência (pensão por morte)</li>
+                <li>Carnês de contribuição, CTPS, contratos de trabalho</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-penal">
+              <span>⚖️ Penal</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="docs-penal" class="accordion-panel" hidden>
+              <ul>
+                <li>Auto de prisão em flagrante (APF), se houver</li>
+                <li>Boletim de ocorrência</li>
+                <li>Mandado de prisão ou busca (cópia, se possível)</li>
+                <li>Dados completos da delegacia (nome do delegado, telefone)</li>
+                <li>Contato dos advogados acionados</li>
+                <li>Testemunhas com nome e contato</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-imobiliario">
+              <span>🏠 Imobiliário</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="docs-imobiliario" class="accordion-panel" hidden>
+              <ul>
+                <li>Matrícula atualizada do imóvel (Cartório de Registro de Imóveis)</li>
+                <li>Contrato de locação ou compra e venda</li>
+                <li>Comprovantes de pagamento de aluguel</li>
+                <li>Certidões negativas do vendedor/proprietário</li>
+                <li>IPTU e taxas condominiais</li>
+                <li>Fotos e laudos de vistoria de entrada/saída</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-saude">
+              <span>❤️ Saúde e Planos</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="docs-saude" class="accordion-panel" hidden>
+              <ul>
+                <li>Carta ou protocolo de negativa do plano</li>
+                <li>Laudos e pedidos médicos (solicitação de procedimento)</li>
+                <li>Contrato do plano de saúde</li>
+                <li>Carteirinha e dados do plano</li>
+                <li>Prontuário médico (pode ser solicitado ao médico/hospital)</li>
+                <li>Comprovantes de pagamento das mensalidades</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-bancario">
+              <span>🏦 Bancário</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="docs-bancario" class="accordion-panel" hidden>
+              <ul>
+                <li>Extrato bancário detalhado (últimos 90 dias)</li>
+                <li>Contrato de empréstimo, financiamento ou cartão</li>
+                <li>Comprovantes de pagamento</li>
+                <li>Carta de cobrança ou negativação</li>
+                <li>Boletim de ocorrência (fraude/clonagem)</li>
+                <li>Protocolo de atendimento do SAC ou Bacen</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CALCULADORA DE PRAZOS ===== -->
+    <section id="prazos" class="section prazos-section" aria-labelledby="prazos-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="prazos-title" class="section-title">Calculadora de prazos</h2>
+          <p class="section-subtitle">Estime a data-limite do seu prazo processual. <strong>Confirme sempre com o
+              advogado antes de agir.</strong></p>
+        </div>
+        <div class="prazo-calc" role="form" aria-label="Calculadora de prazos processuais">
+          <div class="prazo-form">
+            <div class="form-group">
+              <label for="prazo-tipo" class="form-label">Tipo de ato processual</label>
+              <select id="prazo-tipo" class="form-select">
+                <option value="">— Selecione —</option>
+                <optgroup label="CPC — Dias úteis">
+                  <option value="15u">Contestação — 15 dias úteis</option>
+                  <option value="15u">Apelação — 15 dias úteis</option>
+                  <option value="15u">Contrarrazões de apelação — 15 dias úteis</option>
+                  <option value="5u">Embargos de declaração — 5 dias úteis</option>
+                  <option value="15u">Agravo interno — 15 dias úteis</option>
+                  <option value="15u">Agravo de instrumento — 15 dias úteis</option>
+                </optgroup>
+                <optgroup label="Trabalhista — Dias úteis">
+                  <option value="8u-trab">Recurso Ordinário Trabalhista — 8 dias úteis</option>
+                  <option value="8u-trab">Recurso de Revista — 8 dias úteis</option>
+                  <option value="8u-trab">Embargos Trabalhistas — 8 dias úteis</option>
+                </optgroup>
+                <optgroup label="Dias corridos">
+                  <option value="10c">Recurso inominado (Juizados) — 10 dias corridos</option>
+                  <option value="120c">Mandado de segurança — 120 dias corridos</option>
+                  <option value="30c">Prazo decadencial CDC (não durável) — 30 dias</option>
+                  <option value="90c">Prazo decadencial CDC (durável) — 90 dias</option>
+                  <option value="30c">Recurso administrativo INSS — 30 dias</option>
+                  <option value="60c">Inventário extrajudicial — 60 dias</option>
+                  <option value="7c">Arrependimento (compra online) — 7 dias</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="prazo-data" class="form-label">Data da intimação / ciência</label>
+              <input type="date" id="prazo-data" class="form-input" aria-describedby="prazo-data-hint" />
+              <span id="prazo-data-hint" class="form-hint">Insira a data em que você foi intimado, citado ou tomou
+                ciência do ato.</span>
+            </div>
+            <button class="btn btn-primary" id="calcular-prazo">Calcular prazo</button>
+          </div>
+          <div id="prazo-resultado" class="prazo-resultado" aria-live="polite" aria-atomic="true" hidden>
+            <div class="prazo-resultado-inner">
+              <p class="prazo-label">Data-limite estimada:</p>
+              <p class="prazo-data-resultado" id="prazo-data-resultado"></p>
+              <p class="prazo-dias-resultado" id="prazo-dias-resultado"></p>
+              <div class="prazo-aviso" role="alert">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="12" y1="9" x2="12" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" />
+                </svg>
+                <strong>Estimativa.</strong> Confirme com o advogado antes de agir. Feriados locais e suspensões
+                específicas não são considerados automaticamente.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PERGUNTAS FREQUENTES ===== -->
+    <section id="perguntas" class="section faq-section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="faq-title" class="section-title">Perguntas frequentes</h2>
+        </div>
+        <div class="accordion" id="faq-accordion">
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-1">
+              <span>O que a IA jurídica faz exatamente?</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="faq-1" class="accordion-panel" hidden>
+              <p>A IA organiza as informações do seu caso, explica seus direitos em linguagem simples, lista os
+                documentos que você precisa reunir e identifica prazos importantes. Ela NÃO substitui a consulta com um
+                advogado — todo conteúdo é informativo e encaminhado para revisão do profissional responsável.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-2">
+              <span>Minhas informações são sigilosas?</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="faq-2" class="accordion-panel" hidden>
+              <p>Sim. A conversa fica salva apenas no seu navegador (sessionStorage) e não é gravada em banco de dados.
+                Os logs do servidor registram apenas metadados técnicos (horário, área jurídica, tamanho da mensagem) —
+                nunca o conteúdo. O serviço opera conforme a LGPD (Lei 13.709/2018).</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-3">
+              <span>O atendimento pela IA é gratuito?</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="faq-3" class="accordion-panel" hidden>
+              <p>Sim, o atendimento inicial pela IA é gratuito. A representação por advogado em processos judiciais ou
+                extrajudiciais é cobrada conforme tabela do escritório, a ser discutida na consulta com o profissional.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-4">
+              <span>A IA pode me dizer prazos exatos?</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="faq-4" class="accordion-panel" hidden>
+              <p>A IA fornece orientações gerais sobre prazos legais (como "apelação em 15 dias úteis"), mas o cálculo
+                exato depende de feriados locais, suspensões judiciais e particularidades do seu processo. Use nossa
+                calculadora de prazos como estimativa e sempre confirme com o advogado.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-5">
+              <span>Alguém da família foi preso. O que fazer agora?</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="faq-5" class="accordion-panel" hidden>
+              <p><strong>Esta é uma situação urgente.</strong> Contate imediatamente um advogado criminal. Enquanto
+                isso: 1) Descubra em qual delegacia a pessoa está; 2) A pessoa tem direito de permanecer em silêncio; 3)
+                A audiência de custódia deve ocorrer em até 24h; 4) Ninguém deve assinar documentos sem advogado
+                presente. Use o botão de WhatsApp para acionar o Duarte Advocacia agora.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-6">
+              <span>Comprei um produto com defeito. Tenho direito à troca?</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="faq-6" class="accordion-panel" hidden>
+              <p>Sim. Pelo Código de Defesa do Consumidor, o fornecedor tem 30 dias para reparar o defeito. Se não
+                resolver, você pode exigir: troca do produto, devolução integral do valor ou abatimento proporcional do
+                preço. Para compras online (fora do estabelecimento), você também tem 7 dias para arrependimento sem
+                precisar justificar.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-7">
+              <span>Quero me divorciar. Preciso ir ao tribunal?</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="faq-7" class="accordion-panel" hidden>
+              <p>Se o divórcio for consensual (ambos concordam) e não houver filhos menores ou incapazes, pode ser feito
+                em cartório extrajudicialmente — mais rápido e barato. Se houver filhos menores, bens disputados ou
+                discordância entre as partes, será necessário processo judicial. Um advogado pode orientar qual caminho
+                é melhor para você.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-8">
+              <span>Uma pessoa da família faleceu. O que fazer com os bens?</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="faq-8" class="accordion-panel" hidden>
+              <p>É necessário abrir inventário para transferir os bens. O prazo legal é de <strong>60 dias</strong> a
+                partir do óbito (após isso, há multa). Se todos os herdeiros forem maiores e capazes e não houver
+                testamento, o inventário pode ser feito em cartório (extrajudicial) — mais rápido. Se houver menores,
+                herdeiros em conflito ou testamento, será judicial.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-9">
+              <span>Sofri acidente de trabalho. Quais são meus direitos?</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="faq-9" class="accordion-panel" hidden>
+              <p>Após acidente de trabalho você tem direito a: auxílio-doença acidentário (B91), estabilidade de 12
+                meses após o retorno ao trabalho, indenização por danos morais e materiais se houver culpa do
+                empregador, e auxílio-acidente se houver sequelas permanentes. A empresa deve emitir a CAT (Comunicação
+                de Acidente de Trabalho). Reúna laudos médicos e comunique ao INSS.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-10">
+              <span>Caí em um golpe digital. O que fazer?</span>
+              <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div id="faq-10" class="accordion-panel" hidden>
+              <p>Faça imediatamente: 1) Registre Boletim de Ocorrência digital na Delegacia Eletrônica do seu estado; 2)
+                Contate seu banco para contestar transações e bloquear contas/cartões; 3) Guarde prints de todas as
+                evidências (mensagens, e-mails, comprovantes); 4) Registre reclamação no Bacen (Banco Central) se for
+                fraude bancária; 5) Contate a OLX, WhatsApp ou plataforma onde ocorreu o golpe para denúncia. Um
+                advogado pode orientar sobre ação de ressarcimento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="section contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="contact-title" class="section-title">Entre em contato</h2>
+          <p class="section-subtitle">Prefere falar diretamente com um advogado? Estamos prontos para atender.</p>
+        </div>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <svg class="contact-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                fill="currentColor" />
+              <path
+                d="M11.994 2C6.479 2 2 6.479 2 12c0 1.785.467 3.558 1.355 5.11L2 22l5.012-1.316A9.959 9.959 0 0 0 11.994 22C17.511 22 22 17.521 22 12c0-5.521-4.489-10-10.006-10z"
+                stroke="currentColor" stroke-width="1.5" fill="none" />
+            </svg>
+            <h3>WhatsApp</h3>
+            <a href="#" id="contact-whatsapp" class="contact-link" target="_blank" rel="noopener noreferrer"
+              id="whatsapp-link">Enviar mensagem</a>
+          </div>
+          <div class="contact-card">
+            <svg class="contact-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <h3>E-mail</h3>
+            <a href="#" id="contact-email" class="contact-link" id="email-link">contato@duarteadvocacia.com.br</a>
+          </div>
+          <div class="contact-card">
+            <svg class="contact-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h3>OAB</h3>
+            <p id="contact-oab" class="contact-info">OAB/SP 000000</p>
+          </div>
+        </div>
+        <!-- Aviso Provimento 205/2021 -->
+        <div class="provimento-aviso" role="note">
+          <p><strong>Aviso legal (Provimento CFE-OAB 205/2021):</strong> As informações disponibilizadas neste site são
+            de natureza meramente informativa e educacional, não constituindo aconselhamento jurídico nem relação
+            advogado-cliente. A contratação do Duarte Advocacia para representação profissional ocorre exclusivamente
+            mediante instrumento específico.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo footer-logo" aria-label="Duarte Advocacia — Início">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <line x1="16" y1="4" x2="16" y2="28" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" />
+            <line x1="4" y1="8" x2="28" y2="8" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" />
+            <circle cx="16" cy="4" r="2" fill="#8B5CF6" />
+            <path d="M4 8 L2 16 Q4 20 7 16 L9 8" stroke="#8B5CF6" stroke-width="1.5" fill="none" />
+            <path d="M28 8 L26 16 Q28 20 31 16 L33 8" stroke="#8B5CF6" stroke-width="1.5" fill="none" />
+            <line x1="10" y1="27" x2="22" y2="27" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <span>Duarte Advocacia</span>
+        </a>
+        <p class="footer-tagline" id="footer-oab">OAB/SP 000000</p>
+        <p class="footer-tagline">Direito com clareza, tecnologia com ética.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <a href="/privacidade">Política de Privacidade</a>
+        <a href="/termos">Termos de Uso</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Duarte Advocacia. Todos os direitos reservados. Conteúdo informativo —
+        não constitui aconselhamento jurídico.</p>
+    </div>
+  </footer>
+
+  <!-- ===== BOTÃO FLUTUANTE DO CHAT ===== -->
+  <button class="chat-fab" id="chat-fab" aria-label="Abrir assistente jurídico IA" aria-expanded="false"
+    aria-controls="chat-panel">
+    <svg class="fab-icon-open" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+    <svg class="fab-icon-close" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+      style="display:none">
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </svg>
+    <span class="fab-label">IA Jurídica</span>
+  </button>
+
+  <!-- ===== PAINEL DO CHAT ===== -->
+  <div class="chat-panel" id="chat-panel" role="dialog" aria-modal="true"
+    aria-label="Assistente Jurídico IA — Duarte Advocacia" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-status-dot" aria-hidden="true"></div>
+        <div>
+          <h2 class="chat-title">IA Jurídica</h2>
+          <p class="chat-subtitle">Duarte Advocacia — Atendimento Informativo</p>
+        </div>
+      </div>
+      <div class="chat-header-actions">
+        <button class="chat-action-btn" id="btn-new-chat" title="Nova conversa" aria-label="Iniciar nova conversa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="chat-action-btn" id="btn-download" title="Baixar conversa"
+          aria-label="Baixar conversa em formato texto">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="chat-action-btn" id="btn-whatsapp-chat" title="Falar com advogado"
+          aria-label="Falar com advogado pelo WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+              fill="currentColor" />
+            <path
+              d="M11.994 2C6.479 2 2 6.479 2 12c0 1.785.467 3.558 1.355 5.11L2 22l5.012-1.316A9.959 9.959 0 0 0 11.994 22C17.511 22 22 17.521 22 12c0-5.521-4.489-10-10.006-10z"
+              stroke="currentColor" stroke-width="1.5" fill="none" />
+          </svg>
+        </button>
+        <button class="chat-action-btn chat-close-btn" id="chat-close" aria-label="Fechar assistente">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Faixa de URGÊNCIA (oculta por padrão) -->
+    <div class="urgency-banner" id="urgency-banner" role="alert" aria-live="assertive" hidden>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        <line x1="12" y1="9" x2="12" y2="13" stroke="currentColor" stroke-width="2" />
+        <line x1="12" y1="17" x2="12.01" y2="17" stroke="currentColor" stroke-width="2" />
+      </svg>
+      <strong>Situação urgente?</strong> Fale agora com um advogado
+      <a href="#" id="urgency-whatsapp" class="btn-urgency" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+
+    <!-- Tela de consentimento LGPD -->
+    <div class="consent-screen" id="consent-screen">
+      <div class="consent-content">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="consent-icon">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#8B5CF6" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <h3>Antes de começar</h3>
+        <p>Este atendimento é realizado por <strong>inteligência artificial</strong> e tem caráter
+          <strong>exclusivamente informativo</strong>. Não substitui a consulta com um advogado habilitado.</p>
+        <ul class="consent-list">
+          <li>🔒 Sua conversa não é gravada em servidores</li>
+          <li>📋 Conteúdo informativo — sem promessa de resultado</li>
+          <li>⚖️ Sujeito ao Código de Ética da OAB e à LGPD</li>
+          <li>👤 Nenhum vínculo advogado-cliente é criado</li>
+        </ul>
+        <label class="consent-check" for="consent-checkbox">
+          <input type="checkbox" id="consent-checkbox" aria-required="true" />
+          <span>Li e concordo com os <a href="/termos" target="_blank" rel="noopener noreferrer">Termos de Uso</a> e a
+            <a href="/privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></span>
+        </label>
+        <button class="btn btn-primary" id="consent-btn" disabled>Iniciar atendimento</button>
+      </div>
+    </div>
+
+    <!-- Área de mensagens -->
+    <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-label="Mensagens do chat"
+      aria-relevant="additions" tabindex="0" hidden>
+    </div>
+
+    <!-- Sugestões rápidas -->
+    <div class="chat-suggestions" id="chat-suggestions" hidden>
+      <button class="suggestion-btn" data-msg="Fui citado em um processo e não sei o que fazer">Fui citado em um
+        processo</button>
+      <button class="suggestion-btn" data-msg="Fui demitido e quero saber meus direitos">Fui demitido</button>
+      <button class="suggestion-btn" data-msg="Estou recebendo cobranças indevidas">Cobrança indevida</button>
+      <button class="suggestion-btn" data-msg="Quero entender meus direitos no divórcio e pensão alimentícia">Divórcio e
+        pensão</button>
+      <button class="suggestion-btn" data-msg="Meu benefício do INSS foi negado. O que posso fazer?">Benefício INSS
+        negado</button>
+    </div>
+
+    <!-- Input do chat -->
+    <div class="chat-input-area" id="chat-input-area" hidden>
+      <div class="chat-input-wrapper">
+        <label for="chat-input" class="sr-only">Digite sua mensagem</label>
+        <textarea id="chat-input" class="chat-textarea" placeholder="Descreva sua situação jurídica..." rows="1"
+          maxlength="2000" aria-describedby="char-counter" aria-label="Campo de mensagem"></textarea>
+        <span class="char-counter" id="char-counter" aria-live="polite" aria-atomic="true">0/2000</span>
+      </div>
+      <button class="chat-send-btn" id="chat-send" aria-label="Enviar mensagem" disabled>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Overlay para mobile -->
+  <div class="chat-overlay" id="chat-overlay" aria-hidden="true"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+
+</html>

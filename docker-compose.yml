@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - PROJECT_ENDPOINT=${PROJECT_ENDPOINT}
+      - AGENT_NAME=${AGENT_NAME}
+      - ALLOWED_ORIGIN=${ALLOWED_ORIGIN:-http://localhost:3000}
+      - WHATSAPP_NUMBER=${WHATSAPP_NUMBER}
+      - OFFICE_NAME=${OFFICE_NAME:-Duarte Advocacia}
+      - OFFICE_EMAIL=${OFFICE_EMAIL}
+      - OAB_REGISTER=${OAB_REGISTER}
+    restart: unless-stopped
+
